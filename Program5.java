@@ -7,7 +7,7 @@ public class Program5{
         int miles[] = new int[] {286, 412, 361, 161};
         int gallons[] = new int[] {9, 40, 18, 11};
         for (int i=0; i<4; i++){
-            System.out.println(names[i]+ " averaged " + (double) miles[i]/gallons[i] + "m/g.");
+            System.out.println(names[i]+ " averaged " + (double)((int)((double)miles[i]*10/gallons[i]+0.5))/10 + "m/g.");
         }
         
     }
